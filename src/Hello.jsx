@@ -1,6 +1,12 @@
-function Hello( {name} ){
+import "./Hello.css";
+function Hello({txt}) {
+    function clickMouse(){
+        atualiza(contador+1)
+    };
     return(
-        <div>Hello {name} </div>
-    );
-}
+        <button className="botao" >
+        Order Now
+        </button>
+    ); 
+};
 export default Hello;
